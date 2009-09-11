@@ -1,6 +1,5 @@
 package Net::Lighthouse::Project::Ticket::Attachment;
 use Any::Moose;
-use XML::Simple;
 use Params::Validate ':all';
 use Net::Lighthouse::Util;
 
@@ -15,7 +14,7 @@ has [ 'width', 'height', 'size', 'uploader_id', 'id', ] => (
     is  => 'ro',
 );
 
-has [ 'content_type', 'filename', 'url', 'type', 'code' ] => (
+has [ 'content_type', 'filename', 'url', 'code' ] => (
     isa => 'Str',
     is  => 'ro',
 );
@@ -78,7 +77,7 @@ ro, DateTime, UTC based
 
 ro, Maybe Int
 
-=item content_type, filename, url, type, code
+=item content_type, filename, url, code
 
 ro, Str
 

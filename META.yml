@@ -27,9 +27,9 @@ requires:
   MIME::Base64: 0
   Params::Validate: 0
   URI::Escape: 0
-  XML::Simple: 0
+  XML::TreePP: 0
   YAML::Syck: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bestpractical/net-lighthouse.git
-version: 0.03
+version: 0.04
