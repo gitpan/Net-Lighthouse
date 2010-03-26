@@ -138,8 +138,9 @@ sub create_comment {
     );
     my %args = @_;
 
-    # TODO doc says <message>, but it doesn't work actually.
-    # comment can work, though still with a problem
+    # TODO doc says <message>, but it's wrong, should be <comment>
+    # see also http://help.lighthouseapp.com/discussions/api-developers/121-create-message-comment-bug
+
     my $xml =
       Net::Lighthouse::Util->translate_to_xml( \%args, root => 'comment', );
 
@@ -355,7 +356,7 @@ sunnavy  C<< <sunnavy@bestpractical.com> >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright 2009 Best Practical Solutions.
+Copyright 2009-2010 Best Practical Solutions.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

@@ -8,7 +8,7 @@ use Net::Lighthouse::Token;
 use Net::Lighthouse::User;
 use base 'Net::Lighthouse::Base';
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 sub project { return shift->_new( 'Project' ) }
 sub user { return shift->_new( 'User' ) }
@@ -51,7 +51,7 @@ Net::Lighthouse - Perl interface to lighthouseapp.com
 
 =head1 VERSION
 
-This document describes Net::Lighthouse version 0.04
+This document describes Net::Lighthouse version 0.05
 
 
 =head1 SYNOPSIS
@@ -112,7 +112,7 @@ sunnavy  C<< <sunnavy@bestpractical.com> >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright 2009 Best Practical Solutions.
+Copyright 2009-2010 Best Practical Solutions.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
